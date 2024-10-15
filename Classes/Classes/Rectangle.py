@@ -8,6 +8,9 @@ class Rectangle:
 			print('Rectangle created')
 		else:
 			print('You cannot create a rectangle with these coord')
+
+	def __str__(self):
+		return f'{self.x1}, {self.y1}, {self.x2}, {self.y2}'
 	
 	def width(self):
 		return self.x2 - self.x1
@@ -24,10 +27,4 @@ class Rectangle:
 
 
 rec = Rectangle(2,7,5,3)
-h = rec.height()
-w = rec.width()
-print(f'height = {h}, wigth = {w}')
-a = rec.area()
-print(f'area = {a}')
-p = rec.perimeter()
-print(f'perimeter = {p}')
+print(rec)
