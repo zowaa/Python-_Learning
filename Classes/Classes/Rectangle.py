@@ -14,9 +14,20 @@ class Rectangle:
 	
 	def height(self):
 		return self.y1 - self.y2
+	
+	def area(self):
+		return self.width() * self.height()
+
+	def perimeter(self):
+		return 2 * (self.width() + self.height())
+		
 
 
-rec = Rectangle(2,7,8,4)
+rec = Rectangle(2,7,5,3)
 h = rec.height()
 w = rec.width()
 print(f'height = {h}, wigth = {w}')
+a = rec.area()
+print(f'area = {a}')
+p = rec.perimeter()
+print(f'perimeter = {p}')
