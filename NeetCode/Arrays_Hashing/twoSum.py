@@ -15,3 +15,6 @@ class Solution:
 
 				
 print(Solution().twoSum([4,5,6],10))
+
+# Time Complexity: O(n)
+# Space Complexity: O(n)
